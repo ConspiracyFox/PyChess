@@ -7,7 +7,11 @@ print(board)
 
 while (i<100):
     a=input()
-    board.push_san(a)
+    try:
+        board.push_san(a)
+    except:
+        print("An error accoured")
+        break
     print(board)
     b=input()
     board.push_san(b)
